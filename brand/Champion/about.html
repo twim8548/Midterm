@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Fashion - Street</title>
+    <meta charset="utf-8">
+    <link rel ="stylesheet" href = "../../style.css">
+  </head>
+  <body>
+    <a href="../../home.html" id="toptitle"> Street Brand </a>
+    <nav id="topMenu">
+      <ul>
+        <li> <a class= "menuLink" href="../Supreme.html"> Supreme </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Carhartt.html"> Carhartt WIP </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Champion.html"> Champion </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Stussy.html"> Stussy </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Obey.html"> OBEY </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Thisisneverthat.html"> THISISNEVERTHAT </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Iamnotahumanbeing.html"> IAMNOTAHUMANBEING </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Lmc.html"> LMC </a></li>
+      </ul>
+    </nav>
+    <nav id="subMenu">
+      <ul>
+        <li> <a class="menuLink" href="about.html"> About </a></li>
+        <li> <a class="menuLink" href="image.html"> Image </a></li>
+        <li> <a class="menuLink" href="product.html"> Lookbook </a></li>
+        <li> <a class="menuLink" href="http://store.musinsa.com/champion"target="_blank"> Buying </a></li>
+      </ul>
+    </nav>
+    <h1>About</h1>
+    <p class="text" id="abtext">
+
+        Champion (or alternatively also stylized as Champion U.S.A.) is an American manufacturer of clothing, specializing in sportswear. The brand is a subsidiary of HanesBrands Inc. (based in Winston-Salem, North Carolina), which was spun off by the Sara Lee Corporation. The company was originally based in Rochester, New York, prior to its acquisition by Sara Lee.<br><br>
+        미국 로체스터에서 탄생한 어슬레틱 브랜드. 우리나라에는 꽤 오래전부터 알려진 브랜드이며 스웻셔츠, 후드종류로 유명하다.
+        USA, Japan, Europe 으로 나뉘며 USA 라인의 경우 가격대가 더 저렴하고 사이즈가 서양인의 체구에 맞춰져 있다.
+        최근 2016년부터 한국으로 런칭된 온라인 스토어에서도 Japan라인을 기준으로 삼는다. 국내에서는 ㈜조스인터내셔널에서 Japan라인 상품을 정식 수입 유통 중이다.<br><br><br>
+        홈페이지 주소 : <a href="https://www.champion.com/" style="color : gainsboro">https://www.champion.com/</a>
+        <br><br>
+    </p>
+    <div id="map">
+    </div>
+    <script>
+      function initMap() {
+        var newyork = {lat: 43.1699, lng:  -77.6169};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: newyork
+        });
+        var marker = new google.maps.Marker({
+          position: newyork,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBamWw1ljLdsjR1PbM3elhAavMeSerw24c&callback=initMap">
+    </script>
+  </body>
+</html>

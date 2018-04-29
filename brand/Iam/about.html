@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Fashion - Street</title>
+    <meta charset="utf-8">
+    <link rel ="stylesheet" href = "../../style.css">
+  </head>
+  <body>
+    <a href="../../home.html" id="toptitle"> Street Brand </a>
+    <nav id="topMenu">
+      <ul>
+        <li> <a class= "menuLink" href="../Supreme.html"> Supreme </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Carhartt.html"> Carhartt WIP </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Champion.html"> Champion </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Stussy.html"> Stussy </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Obey.html"> OBEY </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Thisisneverthat.html"> THISISNEVERTHAT </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Iamnotahumanbeing.html"> IAMNOTAHUMANBEING </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Lmc.html"> LMC </a></li>
+      </ul>
+    </nav>
+    <nav id="subMenu">
+      <ul>
+        <li> <a class="menuLink" href="about.html"> About </a></li>
+        <li> <a class="menuLink" href="image.html"> Image </a></li>
+        <li> <a class="menuLink" href="product.html"> Lookbook </a></li>
+        <li> <a class="menuLink" href="http://store.musinsa.com/iamnotahumanbeing"target="_blank"> Buying </a></li>
+      </ul>
+    </nav>
+    <h1>About</h1>
+    <p class="text" id="abtext">
+        " I Am Not A Human Being, " launched by graphic designer Lil ' Deezy ' in 2015, is a street brand based in Seoul. The brand name means " I Am Not Human, " a designer brand that inspired Lil'Deezy's identity to break away from outdated ideas and designs. From the production process, Lil Deezy Designer was directly involved in the development of clothes to develop high quality graphics coulering fabric using Japanese unique decommissioning patterns and stubborn sewing methods. It is also a new genre of street brand that is moving away from Same Old Shit, which is always looking for the same thing by sending messages using the graphics of its clothes.<br><br>
+        2015년 그래픽 디자이너 Lil' Deezy 가 런칭한 "I Am Not A Human Being"은 서울을 기반에 둔 스트릿브랜드 이다. 브랜드네임이 가지고 있는 뜻은 "나는 인간이 아니다" 라는 슬로건으로 인간이 고리타분한 아이디어와 디자인을 탈피하여 Lil'Deezy 만의 아이덴티티를 불어넣은 디자이너 브랜드이다. 옷의 생산과정부터 Lil Deezy Designer 가 직접 관여하여 일본 특유의 해체적인 패턴과 고집있는 재봉방식을 사용하여 높은 퀄리티로 제작되었으며, 옷의 그래픽 컬러링과 원단의 믹스매치 전개로 니즈를 충족하기위해 다양히 전개하였다. 또한 옷의 그래픽으로 메세지를 전달하여 항상 같은것을 추구하는 Same Old Shit 에서 벗어나 레어함을 추구하는 새로운 장르의 스트릿브랜드이다.<br><br><br>
+        홈페이지 주소 : <a href="http://www.iamnotahumanbeing.com" style="color : gainsboro">http://www.iamnotahumanbeing.com</a>
+        <br><br>
+    </p>
+    <div id="map">
+    </div>
+    <script>
+      function initMap() {
+        var newyork = {lat: 37.558872, lng: 126.907954};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: newyork
+        });
+        var marker = new google.maps.Marker({
+          position: newyork,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBamWw1ljLdsjR1PbM3elhAavMeSerw24c&callback=initMap">
+    </script>
+  </body>
+</html>
