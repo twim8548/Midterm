@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Fashion - Street</title>
+    <meta charset="utf-8">
+    <link rel ="stylesheet" href = "../../style.css">
+  </head>
+  <body>
+    <a href="../../home.html" id="toptitle"> Street Brand </a>
+    <nav id="topMenu">
+      <ul>
+        <li> <a class= "menuLink" href="../Supreme.html"> Supreme </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Carhartt.html"> Carhartt WIP </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Champion.html"> Champion </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Stussy.html"> Stussy </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Obey.html"> OBEY </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Thisisneverthat.html"> THISISNEVERTHAT </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Iamnotahumanbeing.html"> IAMNOTAHUMANBEING </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Lmc.html"> LMC </a></li>
+      </ul>
+    </nav>
+    <nav id="subMenu">
+      <ul>
+        <li> <a class="menuLink" href="about.html"> About </a></li>
+        <li> <a class="menuLink" href="image.html"> Image </a></li>
+        <li> <a class="menuLink" href="product.html"> Lookbook </a></li>
+        <li> <a class="menuLink" href="http://store.musinsa.com/lmc"target="_blank"> Buying </a></li>
+      </ul>
+    </nav>
+    <h1>About</h1>
+    <p class="text" id="abtext">
+        The Brand 'LMC' stands for 'Lost Management Cities' and has been operating by the company 'LAYER'. In the Collection of LMC shows the colors of understated with graphics and get inspired from the life styles in different aspects of the cities and their subcultures. Every each season, 'LMC' choose the one of the city for their theme of the collection and presents the various forms of collection for every season.<br><br>
+        LMC는 Lost Management Cities의 약자로서, 완전한 통제가 불가능한 유기적인 도시들의 풍경, 질서와 무질서, 그리고 각자의 개성으로 살아가는 우리의 라이프 스타일에서 영감을 받아 전개되는 브랜드 입니다. 매시즌 전 세계중 한곳의 분위기와 색채, 그리고 서브컬쳐를 베이스로 컬렉션을 담아내고 있습니다.<br><br><br>
+        홈페이지 주소 : <a href="http://lostmanagementcities.com/" style="color : gainsboro">http://lostmanagementcities.com/</a>
+        <br><br>
+    </p>
+    <div id="map">
+    </div>
+    <script>
+      function initMap() {
+        var newyork = {lat: 37.522789, lng: 127.0286};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: newyork
+        });
+        var marker = new google.maps.Marker({
+          position: newyork,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBamWw1ljLdsjR1PbM3elhAavMeSerw24c&callback=initMap">
+    </script>
+  </body>
+</html>

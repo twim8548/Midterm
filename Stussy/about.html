@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Fashion - Street</title>
+    <meta charset="utf-8">
+    <link rel ="stylesheet" href = "../../style.css">
+  </head>
+  <body>
+    <a href="../../home.html" id="toptitle"> Street Brand </a>
+    <nav id="topMenu">
+      <ul>
+        <li> <a class= "menuLink" href="../Supreme.html"> Supreme </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Carhartt.html"> Carhartt WIP </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Champion.html"> Champion </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Stussy.html"> Stussy </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Obey.html"> OBEY </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Thisisneverthat.html"> THISISNEVERTHAT </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Iamnotahumanbeing.html"> IAMNOTAHUMANBEING </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Lmc.html"> LMC </a></li>
+      </ul>
+    </nav>
+    <nav id="subMenu">
+      <ul>
+        <li> <a class="menuLink" href="about.html"> About </a></li>
+        <li> <a class="menuLink" href="image.html"> Image </a></li>
+        <li> <a class="menuLink" href="product.html"> Lookbook </a></li>
+        <li> <a class="menuLink" href="http://store.musinsa.com/stussy"target="_blank"> Buying </a></li>
+      </ul>
+    </nav>
+    <h1>About</h1>
+    <p class="text" id="abtext">
+        Stüssy is a clothing brand and private company started in the early 1980s by Shawn Stussy. The company is one of many that benefited from the surfwear trend originating in Orange County, California, but it has largely been adopted by the streetwear and hip-hop scenes.
+        The early success of the brand has been attributed to its popularity in the hip hop and skater/surfer scenes. The brand was also embraced by punk subculture and other street subcultures. In a 1992 interview Stussy said: "Everybody calls it surf wear, or urban streetwear, or surf street... I don't name it, and I don't name it on purpose."<br><br>
+        스투시는 1980년 SHAWN STUSSY 라는 서프보드에 열광하는 CREW가 만든 브랜드 이다. 스투시의 특유의 로고는 SHAWN STUSSY가 자기 이름을 대충 갈겨써서 만든 로고로 지금은 스트릿웨어에서 빼놓을수 없는 브랜드로 자리 잡앗지만 스투시의 시초는 캘리포니아에서 그가 티셔츠와 서프보드를 만들면서 기작된 작은 브랜드 였다. 스투시의 성공요인은 언제나 열린마인드로 도쿄와 런던 뉴욕의 보더,DJ,등과 교류를 하며 그들의 문화를 컨셉으로 잡고 1970,80년대 영국 펑크의 DIY정신까지 받아드려 현재까지 독립적이며 모든 스티릿 문화를 좋아하는 사람들이 동경하는 브랜드로 자리 잡았다.<br><br><br>
+        홈페이지 주소 : <a href="https://www.stussy.com/" style="color : gainsboro">https://www.stussy.com/</a>
+        <br><br>
+    </p>
+    <div id="map">
+    </div>
+    <script>
+      function initMap() {
+        var newyork = {lat: 33.5427189, lng: -117.78535679999999};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: newyork
+        });
+        var marker = new google.maps.Marker({
+          position: newyork,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBamWw1ljLdsjR1PbM3elhAavMeSerw24c&callback=initMap">
+    </script>
+  </body>
+</html>

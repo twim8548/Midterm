@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Fashion - Street</title>
+    <meta charset="utf-8">
+    <link rel ="stylesheet" href = "../../style.css">
+  </head>
+  <body>
+    <a href="../../home.html" id="toptitle"> Street Brand </a>
+    <nav id="topMenu">
+      <ul>
+        <li> <a class= "menuLink" href="../Supreme.html"> Supreme </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Carhartt.html"> Carhartt WIP </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Champion.html"> Champion </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Stussy.html"> Stussy </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Obey.html"> OBEY </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Thisisneverthat.html"> THISISNEVERTHAT </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Iamnotahumanbeing.html"> IAMNOTAHUMANBEING </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Lmc.html"> LMC </a></li>
+      </ul>
+    </nav>
+    <nav id="subMenu">
+      <ul>
+        <li> <a class="menuLink" href="about.html"> About </a></li>
+        <li> <a class="menuLink" href="image.html"> Image </a></li>
+        <li> <a class="menuLink" href="product.html"> Lookbook </a></li>
+        <li> <a class="menuLink" href="http://store.musinsa.com/supreme"target="_blank"> Buying </a></li>
+      </ul>
+    </nav>
+    <h1>About</h1>
+    <p class="text" id="abtext">
+
+        Supreme is an American skateboarding shop and clothing brand established in New York City in April 1994. The brand caters to the skateboarding, hip hop, and rock cultures, as well as to the youth culture in general. The brand produces clothes and accessories and also manufactures skateboards. Its shoes, clothing, and accessories are sold extensively in the secondary market, and the brand is renowned for selling out of items within seconds.<br><br>
+        슈프림은 1994년 4월 뉴욕 맨하탄 중심가 Lafayette 거리에서 시작되었고, 뉴욕시티 보드문화의 중심이 되었다. 뉴욕의 거칠고 반항적인 보더들과 아티스트들이 슈프림의 store staff과 고객,매니아층을 형성하며,슈프림은 끊임없이 변하는 뉴욕 중심가 문화의 필수적인 부분으로 성장하였고,펑크,보더,힙합을 하는 이들을 포함한 모든 이들이 슈프림에 이끌려왔다. 슈프림이 다운타운의 명물(혹은 관례,관습)으로 성장하면서, 곧 품질과 스타일 그리고 신뢰로서 브랜드의 가치를 인정받았고, 슈프림만의 독특한 정체성을 유지할수 있도록 우리시대 최고의 디자이너,아티스트,포토그래퍼 그리고 뮤지션들이 14년간의 역사동안 슈프림과 함께 일해왔다.<br><br><br>
+        홈페이지 주소 : <a href="https://www.supremenewyork.com" style="color : gainsboro">https://www.supremenewyork.com</a>
+        <br><br>
+    </p>
+    <div id="map">
+    </div>
+    <script>
+      function initMap() {
+        var newyork = {lat: 40.722121, lng: -73.997447};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 20,
+          center: newyork
+        });
+        var marker = new google.maps.Marker({
+          position: newyork,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBamWw1ljLdsjR1PbM3elhAavMeSerw24c&callback=initMap">
+    </script>
+  </body>
+</html>
