@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Fashion - Street</title>
+    <meta charset="utf-8">
+    <link rel ="stylesheet" href = "../../style.css">
+  </head>
+  <body>
+    <a href="../../home.html" id="toptitle"> Street Brand </a>
+    <nav id="topMenu">
+      <ul>
+        <li> <a class= "menuLink" href="../Supreme.html"> Supreme </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Carhartt.html"> Carhartt WIP </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Champion.html"> Champion </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Stussy.html"> Stussy </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Obey.html"> OBEY </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Thisisneverthat.html"> THISISNEVERTHAT </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Iamnotahumanbeing.html"> IAMNOTAHUMANBEING </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Lmc.html"> LMC </a></li>
+      </ul>
+    </nav>
+    <nav id="subMenu">
+      <ul>
+        <li> <a class="menuLink" href="about.html"> About </a></li>
+        <li> <a class="menuLink" href="image.html"> Image </a></li>
+        <li> <a class="menuLink" href="product.html"> Lookbook </a></li>
+        <li> <a class="menuLink" href="http://store.musinsa.com/carhartt"target="_blank"> Buying </a></li>      </ul>
+    </nav>
+    <h1>Lookbook</h1><br>
+    <button class="w3-btn" onclick="plusDivs(-1)" >&#10094; Prev</button>
+    <button class="w3-btn" onclick="plusDivs(1)">Next &#10095;</button>
+    <img class="mySlides"  src="Lookbook/lookbook1.jpg" >
+    <img class="mySlides"  src="Lookbook/lookbook2.jpg">
+    <img class="mySlides"  src="Lookbook/lookbook3.jpg">
+    <img class="mySlides"  src="Lookbook/lookbook4.jpg">
+    <img class="mySlides"  src="Lookbook/lookbook5.jpg">
+    <img class="mySlides"  src="Lookbook/lookbook6.jpg">
+    <img class="mySlides"  src="Lookbook/lookbook7.jpg">
+    <img class="mySlides"  src="Lookbook/lookbook8.jpg">
+    <img class="mySlides"  src="Lookbook/lookbook9.jpg">
+    <img class="mySlides"  src="Lookbook/lookbook10.jpg">
+
+
+
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Fashion - Street</title>
+    <meta charset="utf-8">
+    <link rel ="stylesheet" href = "../../style.css">
+  </head>
+  <body>
+    <a href="../../home.html" id="toptitle"> Street Brand </a>
+    <nav id="topMenu">
+      <ul>
+        <li> <a class= "menuLink" href="../Supreme.html"> Supreme </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Carhartt.html"> Carhartt WIP </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Champion.html"> Champion </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Stussy.html"> Stussy </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Obey.html"> OBEY </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Thisisneverthat.html"> THISISNEVERTHAT </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Iamnotahumanbeing.html"> IAMNOTAHUMANBEING </a></li>
+        <li> | </li>
+        <li> <a class= "menuLink" href="../Lmc.html"> LMC </a></li>
+      </ul>
+    </nav>
+    <nav id="subMenu">
+      <ul>
+        <li> <a class="menuLink" href="about.html"> About </a></li>
+        <li> <a class="menuLink" href="image.html"> Image </a></li>
+        <li> <a class="menuLink" href="product.html"> Lookbook </a></li>
+        <li> <a class="menuLink" href="http://store.musinsa.com/carhartt"target="_blank"> Buying </a></li>
+      </ul>
+    </nav>
+    <h1>About</h1>
+    <p class="text" id="abtext">
+
+        Carhartt Work In Progress (WIP). WIP is the streetwear version of the Carhartt brand, often marketed as comparable to Stussy or Supreme (clothing).<br>
+        Carhartt WIP often collaborates with other streetwear brands. An example would be the line of A Bathing Ape X Carhartt WIP camouflage hoodies and jackets. There have also been collaborations with A.P.C., Commes des Garcons, Vetements, Junya Watanabe Pontus Alv's Polar Skate Co.<br><br>
+        Carhartt Work in Progress (이하 Carhartt WIP)는 Carhartt라는 브랜드가 가지고 있는 정체성을 전위적이고 현대적인 방식으로 재해석한다.<br>
+        Hamilton Carhartt는 1889년 디트로이트에서 Carhartt Company를 설립했다. 초기 제품들은 데님과 덕 캔버스로 만들어진 작업복들이었고, 이 중에서 Carhartt만의 브라운 색으로 대표되는 덕 캔버스는 브랜드를 상징하는 원단으로 자리 잡는다. 설립 이래 Carhartt는 “Best in Class”라는 모토 아래 최상의 완성도, 내구성, 그리고 안정감을 추구하는 의류만을 공급하기 위해 헌신해오고 있다.<br>
+        1994년에 설립된 Work in Progress는 유럽을 관통하는 유통망을 구축하며 Carhartt를 대표하는 클래식 제품들을 유럽시장에 소개하기 시작했다. 결과는 즉각적인 성공이었다. Work in Progress를 통해 소개된 Carhartt 제품들은 클래식한 미국식 의복에 열광하는 유럽인들과 막 싹이 트이고 있던 유럽의 도시 문화 향유집단을 단숨에 사로잡아 버린다.<br><br><br>
+        홈페이지 주소 : <a href="http://www.carhartt-wip.co.kr" style="color : gainsboro">http://www.carhartt-wip.co.kr</a>
+        <br><br>
+    </p>
+    <div id="map">
+    </div>
+    <script>
+      function initMap() {
+        var newyork = {lat: 42.331389, lng: -83.045833};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: newyork
+        });
+        var marker = new google.maps.Marker({
+          position: newyork,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBamWw1ljLdsjR1PbM3elhAavMeSerw24c&callback=initMap">
+    </script>
+  </body>
+</html>
